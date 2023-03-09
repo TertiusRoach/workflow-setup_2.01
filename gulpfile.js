@@ -140,7 +140,7 @@ const compileCode = (pageName) => {
         sourcemaps
           .write('./', {
             includeContent: false,
-            addComment: true, //This "Comment" is the "COMMENT" that the browser uses to reference the file.
+            addComment: true,
             sourceMappingURL: srcUrlMapper,
             sourceRoot: '../src',
           })
@@ -150,18 +150,28 @@ const compileCode = (pageName) => {
   };
 
   //--|▼| Copy front-end pages |▼|--//
+
   let copyFront = (pageName) => {
     let frontFolders = ['A-body', 'B-overlay', 'C-header', 'D-footer', 'E-leftbar', 'F-rightbar', 'G-main', 'H-data'];
     for (let i = 0; i < frontFolders.length; i++) {
       gulp
-        //--| Find the *.js file |--//
+        //--| Find all files and folders |--//
         .src(`dist/front-end/${pageName}/${frontFolders[i]}/**/*`)
         //--| Set Destination |--//
         .pipe(gulp.dest(`dist/front-end/${pageName}/${frontFolders[i].split('-')[1]}/`));
+
+      /*
+      gulp
+        //--| Find import-*.js for each block |--//
+        .src(`dist/front-end/${pageName}/${frontFolders[i]}/import-${frontFolders[i].split('-')[1]}.js`)
+        //--| Set Destination |--//
+        .pipe(gulp.dest(`dist/front-end/${pageName}/${frontFolders[i].split('-')[1]}/`));
+      */
     }
   };
 
-  //--|▼| Delete front-end clutter |▼|--//
+  //--|▼| Delete sorted front-end clutter |▼|--//
+
   let cleanFront = (pageName) => {
     return gulp
       .src(
@@ -181,9 +191,10 @@ const compileCode = (pageName) => {
   };
 
   //--|▼| Execute functions asynchronously |▼|--//
-  setTimeout(compileTypes, 0000);
-  setTimeout(copyFront, 5000, pageName);
-  setTimeout(cleanFront, 10000, pageName);
+  compileTypes();
+  /* setTimeout(compileTypes, 0000); */
+  /* setTimeout(copyFront, 5000, pageName); */
+  /* setTimeout(cleanFront, 10000, pageName); */
 };
 
 //-------------------------------------------------//
