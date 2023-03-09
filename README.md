@@ -1,6 +1,6 @@
 # Workflow Setup 2.01
 
-Maintaining projects shouldn't be hard when it becomes big. Yeah, I'm figuring out a solution by starting with the file structure. For some reason the README isn't displaying correctly.
+Maintaining big development projects can be challenging due to their complexity and the number of moving parts involved. However, it should not be hard if proper planning, organization, and communication are in place. Establishing clear goals, timelines, and responsibilities, as well as using appropriate project management tools and methodologies to help ensure that the project stays on track and all team members are aware of their tasks and deadlines. Ultimately, with the right approach and mindset, maintaining big development projects can be a manageable task and this is what I try to achieve with this project.
 
 ## Project Links
 
@@ -45,7 +45,7 @@ Maintaining projects shouldn't be hard when it becomes big. Yeah, I'm figuring o
 ## Checklist
 
 [AWS & MySQL (Setup)](https://www.youtube.com/watch?v=6Nt-Jl3CzxE)
-[Build Secure Login Screen]()
+[Secure Login Screen](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
 
 ## Clasp (Setup)
 
@@ -92,4 +92,5 @@ Press (Ctrl + ,) or go to File -> Preferences -> Settings andd search for 'Exclu
 Press (Ctrl + alt + s) to save without prettier reformatting the file.
 
 ---
+
 # workflow-setup_2.01
