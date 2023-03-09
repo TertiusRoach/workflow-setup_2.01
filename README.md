@@ -44,8 +44,12 @@ Maintaining big development projects can be challenging due to their complexity 
 
 ## Checklist
 
-[AWS & MySQL (Setup)](https://www.youtube.com/watch?v=6Nt-Jl3CzxE)
-[Secure Login Screen](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
+1 - [Build Login (Front-end)](https://www.youtube.com/watch?v=hKqbOmVrNZI)
+2 - [Translate Country (Back-end)](https://www.youtube.com/watch?v=NA_mgK4Vrps)
+3 - [Country List (Reference)](https://www.infoplease.com/countries/languages-spoken-in-each-country-of-the-world)
+4 - [Switch Case (Reference)](https://www.iban.com/country-codes)
+5 - [Secure Login (Back-end)](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
+6 - [AWS & MySQL (Back-end)](https://www.youtube.com/watch?v=6Nt-Jl3CzxE)
 
 ## Clasp (Setup)
 
@@ -62,7 +66,7 @@ Log into your Google account by typing 'clasp login' into the terminal and press
     clasp login
 
 Get the [Apps Script ID](src/images/png/screenshots/google-sheets-id.png) you want to link to [Visual Studio Code](https://code.visualstudio.com/). There should also be a specification of the folder location for the JavaScript files. My folder storage location is "[src/apps/clasp/](src/images/png/screenshots/clasp-folder-location.png)" but you can change it accordingly. Replace ["G3T*yOuR_ScR!pT_iD_aNd_C0Py*!t_H3rE"](src/images/png/screenshots/google-sheets-id.png) inside the [.clasp.json](src/images/png/screenshots/clasp-json.png) file with the [script ID](src/images/png/screenshots/google-sheets-id.png) before using the following [clasp](https://github.com/google/clasp) command.
-![G3T*yOuR_ScR!pT_iD_aNd_C0Py*!t_H3rE](src/images/png/screenshots/clasp-json.png)
+[G3T*yOuR_ScR!pT_iD_aNd_C0Py*!t_H3rE](src/images/png/screenshots/clasp-json.png)
 
     clasp clone "G3T*yOuR_ScR!pT_iD_aNd_C0Py*!t_H3rE" --rootDir src/apps/clasp/
 
@@ -76,7 +80,7 @@ Now you're ready to use Visual Studio Code and its extensions for a better codin
 ## Gulp (Setup)
 
 The 'gulpfile.js' contains the code to automate this workflow. I followed this [gulp crash course](https://www.youtube.com/watch?v=1rw9MfIleEg&ab_channel=TraversyMedia) and expanded on it to accommodate this folder layout. To imbed [it](https://en.wikipedia.org/wiki/Gulp.js) into VSC (Visual Studio Code) install the extension [Gulp Tasks](https://marketplace.visualstudio.com/items?itemName=nickdodd79.gulptasks) by Nick Dodd.
-![Gulp Visual Example](src/images/png/screenshots/gulp-tasks-by-nick-dodd.png)
+[Gulp Visual Example](src/images/png/screenshots/gulp-tasks-by-nick-dodd.png)
 
 The written functions should work if it corresponds with the folder layout of this repository.
 
