@@ -1,0 +1,1 @@
+require(["main"],()=>{require(["dist/vendors/font-awesome/js/all.min.js","https://code.jquery.com/jquery-3.6.0.min.js","dist/front-end/index/index.js"])});
