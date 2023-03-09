@@ -1,1 +1,1 @@
-require(["main"],()=>{require(["dist/vendors/font-awesome/js/all.min.js","https://code.jquery.com/jquery-3.6.0.min.js","dist/front-end/index/index.js"])});
+require(["main"],()=>{var e=window.location.href.split("/").pop().split(".")[0];require(["dist/vendors/font-awesome/js/all.min.js","https://code.jquery.com/jquery-3.6.0.min.js",`dist/front-end/${e}/${e}.js`])});

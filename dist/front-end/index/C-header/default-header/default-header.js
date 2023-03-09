@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,d){"use strict";Object.defineProperty(d,"__esModule",{value:!0}),d.IndexDefaultHeader=void 0,(d.IndexDefaultHeader||(d.IndexDefaultHeader={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))}});

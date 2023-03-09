@@ -1,1 +1,1 @@
-console.log("--index.js Loaded");
+define(["require","exports","back-end/utilities/GetDesign"],function(e,n,i){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.Index=void 0,n.Index||(n.Index={}),new i.GetDesign.forPage("login-body"),console.log("--index.js Loaded")});

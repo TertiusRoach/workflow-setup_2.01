@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,o){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),o.IndexLoginBody=void 0,(o.IndexLoginBody||(o.IndexLoginBody={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))}});
