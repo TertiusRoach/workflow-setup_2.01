@@ -1,17 +1,17 @@
 //--|▼| Colors |▼|--//
-$primary-dark: #2e0e3b; //--► rgba(46, 14, 59, 1) ◄--//
-$primary-medium: #827d85; //--► rgba(46, 14, 59, 0.8) ◄--//
-$primary-light: #adaaaf; //--► rgba(46, 14, 59, 0.6) ◄--//
+// $primary-dark: #2e0e3b; //--► rgba(46, 14, 59, 1) ◄--//
+// $primary-medium: #827d85; //--► rgba(46, 14, 59, 0.8) ◄--//
+// $primary-light: #adaaaf; //--► rgba(46, 14, 59, 0.6) ◄--//
 
-$secondary-dark: #631b19; //--► rgba(99, 27, 25, 1) ◄--//
-$secondary-medium: #957e7e; //--► rgba(99, 27, 25, 0.8) ◄--//
-$secondary-light: #c8c0c0; //--► rgba(99, 27, 25, 0.6) ◄--//
+// $secondary-dark: #631b19; //--► rgba(99, 27, 25, 1) ◄--//
+// $secondary-medium: #957e7e; //--► rgba(99, 27, 25, 0.8) ◄--//
+// $secondary-light: #c8c0c0; //--► rgba(99, 27, 25, 0.6) ◄--//
 //--|▲| Colors |▲|--//
-
-* {
-  font-family: 'Baloo Bhai 2', arial;
-}
-
 .default-body {
-  background-color: red;
+  //--▼ Desktop (Landscape) ▼--//
+  @media screen and (orientation: landscape) {
+  }
+  //--▼ Mobile (Portrait) ▼--//
+  @media screen and (orientation: portrait) {
+  }
 }

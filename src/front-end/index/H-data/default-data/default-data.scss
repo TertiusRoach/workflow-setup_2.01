@@ -1,3 +1,8 @@
 .default-data {
-  color: white;
+  //--▼ Desktop (Landscape) ▼--//
+  @media screen and (orientation: landscape) {
+  }
+  //--▼ Mobile (Portrait) ▼--//
+  @media screen and (orientation: portrait) {
+  }
 }
