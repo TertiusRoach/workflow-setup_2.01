@@ -52,9 +52,11 @@ Maintaining big development projects can be challenging due to their complexity 
 
 4 - [Switch Case (Reference)](https://www.iban.com/country-codes)
 
-5 - [Secure Login (Back-end)](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
+5 - [Translate API (Back-end)](https://www.nodejsera.com/how-to-use-google-translator-with-nodejs.html)
 
-6 - [AWS & MySQL (Back-end)](https://www.youtube.com/watch?v=6Nt-Jl3CzxE)
+6 - [Secure Login (Back-end)](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
+
+7 - [AWS & MySQL (Back-end)](https://www.youtube.com/watch?v=6Nt-Jl3CzxE)
 
 ## Clasp (Setup)
 
