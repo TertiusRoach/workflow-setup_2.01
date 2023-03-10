@@ -1,1 +1,1 @@
-define(["require","exports"],function(e,o){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),o.IndexLoginBody=void 0,(o.IndexLoginBody||(o.IndexLoginBody={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))}});
+define(["require","exports","back-end/utilities/GetDesign"],function(e,n,o){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.IndexLoginBody=void 0,(n.IndexLoginBody||(n.IndexLoginBody={})).eventsFor=function(e){new o.GetDesign.forPage("gradient-main"),console.log("--".concat(e," Loaded"))}});
