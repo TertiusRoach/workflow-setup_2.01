@@ -1,8 +1,20 @@
 .login-body {
+  background-color: darkred;
+
   //--▼ Desktop (Landscape) ▼--//
   @media screen and (orientation: landscape) {
+    .login-overlay {
+      grid-row: 3/13;
+      grid-column: 8/20;
+      background-color: darkgreen;
+    }
   }
   //--▼ Mobile (Portrait) ▼--//
   @media screen and (orientation: portrait) {
+    .login-overlay {
+      grid-row: 2/28;
+      grid-column: 2/14;
+      background-color: blue;
+    }
   }
 }

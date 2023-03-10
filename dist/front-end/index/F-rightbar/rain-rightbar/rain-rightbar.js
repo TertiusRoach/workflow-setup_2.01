@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,n){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.IndexRainRightbar=void 0,(n.IndexRainRightbar||(n.IndexRainRightbar={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))}});
