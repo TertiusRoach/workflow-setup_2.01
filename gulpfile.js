@@ -20,7 +20,7 @@ const copyHTML = (pageName) => {
     .src(`src/front-end/${pageName}/${pageName}.html`)
     //--| Clear comments from HTML file |--//
     .pipe(removeHtmlComments())
-    //--|Compress HTML file |--//
+    //--| Compress HTML file |--//
     .pipe(htmlmin({ collapseWhitespace: true }))
     //--| Copy the pageName.html into 'root' folder |--//
     .pipe(gulp.dest('dist/../'));
@@ -44,6 +44,7 @@ const compileSCSS = (pageName) => {
     gulp
       //--| Find all the *.scss files |--//
       .src([
+        'src/front-end/corporate-identity.scss',
         `src/front-end/${pageName}/A-body/**/*.scss`,
         `src/front-end/${pageName}/B-overlay/**/*.scss`,
         `src/front-end/${pageName}/C-header/**/*.scss`,
@@ -52,7 +53,6 @@ const compileSCSS = (pageName) => {
         `src/front-end/${pageName}/F-rightbar/**/*.scss`,
         `src/front-end/${pageName}/G-main/**/*.scss`,
         `src/front-end/${pageName}/H-data/**/*.scss`,
-        'src/front-end/corporate-identity.scss',
         'src/front-end/responsive-design.scss',
       ])
       //--| Combine the selected *.scss files |--//
@@ -150,7 +150,6 @@ const compileCode = (pageName) => {
   };
 
   //--|▼| Copy front-end pages |▼|--//
-
   let copyFront = (pageName) => {
     let frontFolders = ['A-body', 'B-overlay', 'C-header', 'D-footer', 'E-leftbar', 'F-rightbar', 'G-main', 'H-data'];
     for (let i = 0; i < frontFolders.length; i++) {
@@ -171,7 +170,6 @@ const compileCode = (pageName) => {
   };
 
   //--|▼| Delete sorted front-end clutter |▼|--//
-
   let cleanFront = (pageName) => {
     return gulp
       .src(
@@ -190,8 +188,8 @@ const compileCode = (pageName) => {
       .pipe(clean());
   };
 
-  //--|▼| Execute functions asynchronously |▼|--//
   compileTypes();
+  //--|▼| Execute functions asynchronously |▼|--//
   /* setTimeout(compileTypes, 0000); */
   /* setTimeout(copyFront, 5000, pageName); */
   /* setTimeout(cleanFront, 10000, pageName); */
