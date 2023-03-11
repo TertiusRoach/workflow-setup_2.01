@@ -32,6 +32,8 @@ export namespace GetIndex {
       case 'login-body':
         IndexLoginBody.eventsFor(blockName);
         break;
+      default:
+        console.log('Error: Add page to GetEvents.ts');
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }
@@ -45,6 +47,8 @@ export namespace GetIndex {
       case 'login-overlay':
         IndexLoginOverlay.eventsFor(blockName);
         break;
+      default:
+        console.log('Error: Add page to GetEvents.ts');
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }
@@ -55,6 +59,8 @@ export namespace GetIndex {
       case 'default-header':
         IndexDefaultHeader.eventsFor(blockName);
         break;
+      default:
+        console.log('Error: Add page to GetEvents.ts');
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }

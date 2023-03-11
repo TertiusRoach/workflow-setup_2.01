@@ -4,6 +4,7 @@
 }
 body {
   height: 100vh;
+  overflow: hidden;
   //--▼ Desktop (Landscape) ▼--//
   @media screen and (orientation: landscape) {
     @media only screen and (min-height: 240px) {
