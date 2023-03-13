@@ -6,8 +6,10 @@ import { IndexDefaultOverlay } from 'front-end/index/B-overlay/default-overlay/d
 import { IndexLoginOverlay } from 'front-end/index/B-overlay/login-overlay/login-overlay';
 
 import { IndexDefaultHeader } from 'front-end/index/C-header/default-header/default-header';
+import { IndexLoginHeader } from 'front-end/index/C-header/login-header/login-header';
 
 import { IndexDefaultFooter } from 'front-end/index/D-footer/default-footer/default-footer';
+import { IndexLoginFooter } from 'front-end/index/D-footer/login-footer/login-footer';
 
 import { IndexDefaultLeftbar } from 'front-end/index/E-leftbar/default-leftbar/default-leftbar';
 import { IndexRainLeftbar } from 'front-end/index/E-leftbar/rain-leftbar/rain-leftbar';
@@ -32,8 +34,6 @@ export namespace GetIndex {
       case 'login-body':
         IndexLoginBody.eventsFor(blockName);
         break;
-      default:
-        console.log('Error: Add page to GetEvents.ts');
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }
@@ -47,8 +47,6 @@ export namespace GetIndex {
       case 'login-overlay':
         IndexLoginOverlay.eventsFor(blockName);
         break;
-      default:
-        console.log('Error: Add page to GetEvents.ts');
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }
@@ -59,8 +57,9 @@ export namespace GetIndex {
       case 'default-header':
         IndexDefaultHeader.eventsFor(blockName);
         break;
-      default:
-        console.log('Error: Add page to GetEvents.ts');
+      case 'login-header':
+        IndexLoginHeader.eventsFor(blockName);
+        break;
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//
   }
@@ -70,6 +69,9 @@ export namespace GetIndex {
     switch (blockName) {
       case 'default-footer':
         IndexDefaultFooter.eventsFor(blockName);
+        break;
+      case 'login-footer':
+        IndexLoginFooter.eventsFor(blockName);
         break;
     }
     //--► console.log(`--${blockName} Loaded`); ◄--//

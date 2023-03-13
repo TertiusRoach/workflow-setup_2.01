@@ -1,0 +1,30 @@
+.login-header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 5fr 2fr 5fr;
+
+  #login-button {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  #signup-button {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  button[id*='button'],
+  button div {
+    border-radius: 8px 8px 0 0; //--◄ Top-left, Top-Right, Bottom-right, Bottom-left ◄--//
+  }
+  //--▼ Desktop (Landscape) ▼--//
+  @media screen and (orientation: landscape) {
+    grid-row: 2/4;
+    grid-column: 8/20;
+    //--► background-color: darkred; ◄--//
+  }
+  //--▼ Mobile (Portrait) ▼--//
+  @media screen and (orientation: portrait) {
+    grid-row: 8/10;
+    grid-column: 2/14;
+    //--► background-color: darkblue; ◄--//
+  }
+}

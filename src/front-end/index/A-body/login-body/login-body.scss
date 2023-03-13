@@ -59,9 +59,12 @@
   }
   .active {
     :is(h1, h2, h3, h4, h5, h6) {
+      opacity: 0;
       cursor: default;
+      /*
       color: $primary-light;
       text-shadow: 0 0 4px black; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+      */
     }
     div:nth-child(2) {
       clip-path: inset(0 0 0 0);
