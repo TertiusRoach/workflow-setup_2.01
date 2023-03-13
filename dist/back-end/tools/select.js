@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.select=void 0,(t.select||(t.select={})).button=function(e){for(var t=document.querySelectorAll("button"),c=0;c<t.length;c++)t[c].className="",e.className="active"}});
